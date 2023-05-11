@@ -2,12 +2,14 @@ package br.com.cursos.matheus.test;
 
 public class Aluno {
 
+	private String sobrenome;
+
 	private String nome;
 	private int registro;
 
 	public Aluno(String nome, int registro) {
 		if(nome == null) {
-			throw new NullPointerException("Nome não pode ser Null");
+			throw new NullPointerException("Nome nï¿½o pode ser Null");
 		}
 		this.nome = nome;
 		this.registro = registro;
